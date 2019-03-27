@@ -1,2 +1,14 @@
-<h1>Items#new</h1>
-<p>Find me in app/views/items/new.html.erb</p>
+<div class="search">
+  <div class="row">
+    <div class="text-center">
+      <%= form tag(new_item_path, method: :get, class: 'form-inline') do %>
+        <div class="form-group">
+          <%= text_field_tag :keyword, @keyword, class:'form-control input-lg', plageholder: "キーワードを入力", size: 40  %>
+        </div>
+        <%= submit_tag '商品を検索', class: 'btn btn-success btn-lg' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render 'items', items: @items %>
