@@ -9,4 +9,7 @@ class User < ApplicationRecord
   
   has_many :ownerships
   has_many :items, through: :ownerships
+  
+  has_many :wants
+  has_many :want_items,through: :wants, source: :item
 end
