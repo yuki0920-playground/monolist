@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'ownerships/create'
+
+  get 'ownerships/destroy'
+
   root to: 'toppages#index'
 
   get 'login', to: 'sessions#new'
