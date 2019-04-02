@@ -9,6 +9,9 @@
             </div>
             <div class="panel-body">
               <p class="item-title"><%= item.name %></p>
+              <div class="buttons text-center">
+                <%= render 'ownerships/want_button', item: item %>
+              </div>
             </div>
           </div>
         </div>

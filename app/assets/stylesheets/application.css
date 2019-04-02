@@ -68,3 +68,15 @@ p.item-title {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
+
+/* item */
+/* 修正分 */
+.item .panel-body {
+  height: 120px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
+}
+
+/* 追加分 */
+.item .buttons form {
+  display: inline-block;
+  margin: 0 5px;
+}
