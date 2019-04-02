@@ -38,8 +38,8 @@ class User < ApplicationRecord
     have.destroy if have
   end
   
-  def have?(have)
-    self.have_items_include?(item)
+  def have?(item)
+    self.have_items.include?(item)
   end  
   
 end
