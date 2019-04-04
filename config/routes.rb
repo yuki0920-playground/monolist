@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'rankings/want'
+  get 'rankings/want', to: 'rankings#want'
+  get 'rankings/have', to: 'rankings#have'
 
   get 'ownerships/create'
 
